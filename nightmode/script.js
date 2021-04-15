@@ -1,4 +1,4 @@
-/* Night Mode JavaScript By Ansh C 
+/* Night Mode JavaScript By Ansh Chauhan 
 https://github.com/AnshC  
 https://anshc.github.io 
 */
