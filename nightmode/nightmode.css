@@ -1,0 +1,58 @@
+/* Night Mode CSS by Ansh C
+https://github.com/AnshC
+https://anshc.github.io
+*/
+
+/* Importing the 'Inter' font (Inter is the default font used by Night Mode) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Default Styling for elements (feel free to change this, it doesn't have
+much effect on Night Mode.
+ */
+
+*{
+    font-family: Inter;
+    font-weight: 500;
+    color:black;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* Root Styles
+
+These variables contain all of the colors used by Night Mode, change them according
+to your choice. Experiment and test all these colors before, and while changing them.
+*/
+
+:root{
+    --brandcolor:rgb(66, 160, 248);
+    --darkmain:rgb(36, 40, 44);
+    --darksecondary: rgb(29, 31, 34);
+    --darktertiary: rgb(16, 17, 19);
+    --lightgrey: rgb(228, 226, 226);
+}
+
+/* Night Mode Class Styles, try experimenting with these. 
+
+These are the default styles given to Night Mode elements.
+
+*/
+
+.nightmode-s{
+    color:var(--brandcolor);
+}
+
+.nightmode, .nightmode-w{
+    color:black;
+}
+
+.nightmode-div{
+    background-color: white;
+    box-shadow: grey 4px 3px 10px;
+}
+
+.nightmode-div2{
+    background-color: var(--lightgrey);
+}

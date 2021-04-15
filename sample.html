@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Mode</title>
+</head>
+<body onload="nightmode()">
+    <div class="main" id="nightmain">
+        <h1 id="brandh1"class="nightmode" style="padding-top: 30px;" onclick="nightmode()">Night Mode</h1>
+        <p class="brand nightmode-s">By Ansh C</p>
+        <p class="nightmode-w">This is night mode in HTML/CSS/JavaScript. It works by adding the classname "nightmode" to an text element (p, h1, h2, and so on tags)</p>
+        <p class="nightmode">Use the <span class="nightmode-s">toggle button</span> at the end of this page to switch between night and light mode or click "Night Mode" on the top of this page.</p>
+        <p class="nightmode-w">Change the CSS Brand Color to your preferred color</p>
+        <p class="nightmode">With different classes, you can change different elements like this! It turns into the brand color when Night Mode is toggled. Feel free to inspect this page to view the classes used, and the CSS too!</p>
+        <p class="nightmode">Change the <span class="nightmode-w">darkmain</span> variable in the :root of the css file to change the main night mode color. By default its set to <span class="nightmode-w">rgb(36, 40, 44).</span> The variables include:<span class="nightmode-s">  --brandcolor | --darkmain | --darksecondary | --darktertiary | --lightgrey. </span> Feel free to change or add any of the variables according to your needs!</p>
+        <p class="nightmode-s">This is the 'nightmode-s' class. Its called the nightmode switch class. In the light theme, it keeps the brand color, and in nightmode, it turns into white!</p>
+        <div class="nightmode-div">
+            <p class="nightmode nightmode-div-p">
+                This is the Night Mode Div Class ('nightmode-div'). It uses the secondary dark color from the CSS and uses it as its background. It's darker than the main dark color in "nightmain"
+            </p>
+            <p class="nightmode-w nightmode-div-p" style="padding-top: 0px;">
+                It also provides a box shadow when in light mode!
+            </p>
+            <div class="nightmode-div2">
+                <p class="nightmode-w">
+                    This is the second night mode div. It's Darker!
+                </p>
+                <p class="nightmode">View the source files and this sample <span><a href="https://github.com/AnshC" class="nightmode-s">here</a></span></p>
+            </div>
+        </div>
+        <div class="nightmode-div" style="margin-top: 40px;">
+            <h1 class="nightmode-w" style="font-weight: 800;">
+                A list of the classes used and what they do:
+            </h1>
+                <ul>
+                    <li class="nightmode class-list-item"><span class="nightmode-w">nightmain:</span> this class is the main class which is wrapped around all nightmode elements, without this night mode will not work. As an example, you can put it on the body tag to make all of the HTML elements workable with nightmode. This also acts as the background for the night mode elements. In dark mode, the element with this class turns into <span class="nightmode-s">('--darkmain')</span></li>
+                    <li class="nightmode class-list-item"><span class="nightmode-w">nightmode:</span> This is the main nightmode class. It turns any text element into the brandcolor when in night mode, and turns any text element to black when in light mode most of the classes are built off this class</li>
+                    <li class="nightmode class-list-item"><span class="nightmode-w">nightmode-w:</span> This class works like the 'nightmode' class, except it turns elements white in night mode and black in light mode</li>
+                    <li class="nightmode class-list-item"><span class="nightmode-w">nightmode-s:</span> This class is the nightmode 'switch' class. In light mode, it turns any text element into the brand color, and in night mode, it turns to white</li>
+                    <li class="nightmode class-list-item"><span class="nightmode-w">nightmode-div:</span> This is the night mode class for divs. As seen above, this helps in styling divs for night mode. In night mode, the div's background turns into a dark color <span class="nightmode-s">('--darksecondary').</span> In light mode, the div's background turns into white and generates a box shadow to make it visible</li>
+                    <li class="nightmode class-list-item"><span class="nightmode-w">nightmode-div2:</span> This is class works like the first div class except it uses a darker background color in night mode <span class="nightmode-s">('--darktertiary').</span> In light mode, it has a grey background color <span class="nightmode-s">('--lightgrey')</span>, and no box shadow</li>
+                </ul>
+        </div>
+        <p class="nightmode-s" style="padding-bottom: 0px; font-size: 12px;">This page contains the main nightmode styles in its source and additional styles to add effect.</p>
+        <div id="nightmodebutton" onclick="nightmode()">Night Mode!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
